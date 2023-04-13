@@ -1,0 +1,28 @@
+.body {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.wrapper{
+    flex-grow: 1;
+    flex-basis: auto;
+    background: var(--gray-600);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    margin: -1.5rem;
+}
+
+.list {
+    width: 736px;
+    display: flex;
+    justify-content: center;
+}

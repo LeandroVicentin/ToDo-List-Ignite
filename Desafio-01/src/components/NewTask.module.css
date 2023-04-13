@@ -1,0 +1,135 @@
+.taskForm {
+    width: 100%;
+    display: flex;
+    /* margin: -1.5rem; */
+}
+
+.taskForm textarea {
+    flex-grow: 1;
+    background: var(--gray-400);
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    color: var(--white);
+    line-height: 40px;
+}
+
+textarea::placeholder{ 
+    line-height: 40px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.button {
+    background: var(--blue-700);
+    border: none;
+    color: white;
+    /* padding: 0px 32px; */
+    height: 2.9rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskForm button[type=submit]:not(:disabled):hover {
+    background: var(--blue-700);
+}
+
+.taskForm button[type=submit]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.plusCircle {
+    margin-left: 5px;
+}
+
+.totalTasks {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 4rem;
+}
+
+.containerList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid var(--gray-400);
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.first {
+    color: var(--blue-700);
+}
+
+.second {
+    color: var(--purple-700);
+}
+
+.noTasks {
+    color: var(--gray-300);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.total {
+    margin-left: 0.5rem;
+    background: var(--gray-400);
+    padding: 0.3rem;
+    border-radius: 50px;
+    color: var(--white);
+}
+
+.taskList {
+    width: 100%;
+    margin-top: 2rem;
+    display: block;
+}
+
+.itemList {
+    width: 100%;
+    margin-top: 1rem;
+    display: block;
+    color: var(--white);
+    background: var(--gray-400);
+    border-radius: 10px;
+    display: flex;
+}
+
+.itemList input {
+    margin-left: 1rem;
+}
+
+.itemList button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-200);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    margin-right: 1rem;
+}
+
+.item {
+    padding: 1.5rem;
+    flex-grow: 4;
+}
+
+.completedItem {
+    padding: 1.5rem;
+    text-decoration: line-through;
+    flex-grow: 4;
+}
+
